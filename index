@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Визитка Асадулла Айхан</title>
+   <style>
+   body{
+      background: white;
+   }
+   #login{
+      text-align:center;
+      background: black;
+      box-shadow:
+         0 0 5px black,
+         0 0 10px black,
+         0 0 15px black,
+         0 0 30px black;
+      margin: 30px 100px;
+      height: 100vh;
+      color:white;
+ }
+    #vvod{
+      font-size:50px;
+    }
+    #vxod{
+      font-size:30px;
+      border-radius:30px;
+      transition: 2s;
+    }
+    #vxod:hover{
+      box-shadow:
+         0 0 5px white,
+         0 0 10px white,
+         0 0 15px white,
+         0 0 30px white;
+    }
+    #h1{
+      position:fixed;
+      right:175px;
+      top:300px;
+    }
+    #input{
+      position:fixed;
+      right:295px;
+      top: 450px;
+    }
+    #voytii{
+      font-size:80px;
+      border-radius:100px;
+      box-shadow:
+         0 0 5px white,
+         0 0 10px white,
+         0 0 15px white,
+         0 0 30px white;
+    }
+    #voyti{
+      position:fixed;
+      right:365px;
+      top:650px;
+    }
+    #nett{
+      font-size:48px;
+      color:red;
+      display:none;
+    }
+    #net{
+      position:fixed;
+      right:300px;
+      top:730px;
+    }
+    main{
+      display:none;
+    }
+    #ayx{
+      border-radius:50%;
+    }
+    #imya{
+      color:white;
+    }
+    #imaa{
+      position:fixed;
+      right:350px;
+      font-size:20px;
+    }
+    #nomerr{
+      position:fixed;
+      top: 750px;
+      right:340px;
+    }
+    #nomer{
+      font-size:45px;
+    }
+    #shkola{
+      position:fixed;
+      right:280px;
+      top: 850px;
+    }
+    #shkolaa{
+      font-size:45px;
+    }
+    #roj{
+      position:fixed;
+      right:400px;
+      top:950px;
+    }
+    #rojj{
+      font-size:45px;
+    }
+   </style>
+</head>
+<body>
+<section id="zastavka">
+    <div id="login">
+<div id="soder">
+      <div id="h1">
+        <h1 id="vvod">Введите пароль для входа.</h1>
+      </div>
+      <div id="input">
+        <input type="text" id="vxod" placeholder="Пароль для входа...">
+      </div>
+      <div id="voyti">
+        <button id="voytii">Войти</button>
+      </div>
+      <div id="net">
+         <p id="nett">Неверный пароль.</p>
+      </div>
+</div>
+    <section id="ocnova">
+       <main id="osnov">
+     <img id="ayx" src="ayxan.jpeg">
+        <div id="imaa">
+         <h1 id="imya">Асадулла Айхан</h1>
+        </div>
+       <div id="nomerr">
+       <p id="nomer">+994 55 954 44 04</p>
+       </div>
+       <div id="shkola">
+         <p id="shkolaa">Школа №17 10C класс</p>
+       </div>
+       <div id="roj">
+          <p id="rojj">29.06.2010</p>
+       </div>
+       </main>
+    </section>
+    </div>
+</section>
+    <section id="scrip">
+        <script>
+           const voytii = document.getElementById("voytii");
+           const input = document.getElementById("vxod");
+           voytii.addEventListener("click" , () => {
+           if (input.value==="31526972") {
+              document.getElementById("soder").style.display="none";
+              document.getElementById("osnov").style.display="block";
+           }
+           else{
+              document.getElementById("nett").style.display="block";
+           }
+           });
+        </script>
+    </section>
+</body>
+</html>
